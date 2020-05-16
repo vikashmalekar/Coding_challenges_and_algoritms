@@ -1,0 +1,18 @@
+        def kadanes(A):
+            n = len(A)
+            Max = A[0]
+            curr = A[0]
+            for i in range(1,n):
+                curr = max(A[i],curr+A[i])
+                if curr > Max:
+                    Max = curr
+            return Max
+        A = list(map(int,input().split())
+        kad = kadanes(A)
+        cirs = sum(A)
+        A = [-A[i] for i in range(len(A))]
+        cirs = cirs+kadanes(A)
+        if cirs>kad and cirs!=0:
+            print(cirs)
+        else:
+            print(cirs)
