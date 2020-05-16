@@ -1,4 +1,6 @@
-# Definition for a binary tree nod
+# Definition for a binary tree node
+
+#This is a leet code problem please refer problem statement in Leetcode by search in google as "cousins in binary tree" before going through this solution
  class TreeNode:
      def __init__(self, val=0, left=None, right=None):
          self.val = val
